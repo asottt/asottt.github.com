@@ -1,67 +1,758 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="asottt.GitHub.com : test">
+    <title>
+        aSot Design</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--
 
-    <title>asottt.GitHub.com</title>
-  </head>
+    Welcome to asot.
 
-  <body>
+    -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/asottt">View on GitHub</a>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-          <h1 id="project_title">asottt.GitHub.com</h1>
-          <h2 id="project_tagline">test</h2>
+    <meta name="description" content="This is the personal website asot.">
+    <meta name="keywords" content="asot, design">
 
-        </header>
+
+    <meta name="msapplication-TileImage" content="/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#E0EBE8">
+
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+
+    <link rel="stylesheet" href="./js/bootstrap.css">
+    <link href="styles/core.css" type="text/css" rel="stylesheet"/>
+    <script src="./asottt_files/jquery-1.10.2.min.js"></script>
+    <script async="" src="./asottt_files/analytics.js"></script>
+    <script type="text/javascript" src="./asottt_files/wdj6cpr.js"></script>
+    <script src="./js/popup_layer.js" type="text/javascript" language="javascript"></script>
+
+    <style type="text/css">.tk-brandon-grotesque {
+        font-family: "brandon-grotesque", sans-serif;
+    }
+
+    .tk-adobe-garamond-pro {
+        font-family: "adobe-garamond-pro", sans-serif;
+    }</style>
+    <link rel="stylesheet"
+        href="./js/userType.css">
+    <script type="text/javascript">try {
+        Typekit.load();
+    } catch (e) {
+    }
+    </script>
+    <script language="javascript">
+        $(document).ready(function() {
+
+
+            var left = $(window).width()/3;
+            var top=$(window).height()/2;
+            //示例6，使用遮罩
+            var pop = new PopupLayer({trigger:"#ele6",popupBlk:"#blk6",closeBtn:"#close6",useOverlay:true,offsets:{x:-left,y:-top}});
+            //示例7，使用遮罩
+            var pop7 = new PopupLayer({trigger:"#ele7",popupBlk:"#blk7",closeBtn:"#close7",useOverlay:true,offsets:{x:-left,y:-top}});
+            //示例8，使用遮罩
+            var pop8 = new PopupLayer({trigger:"#ele8",popupBlk:"#blk8",closeBtn:"#close8",useOverlay:true,offsets:{x:-left,y:-top}});
+            //示例9，使用遮罩
+            var pop9 = new PopupLayer({trigger:"#ele9",popupBlk:"#blk9",closeBtn:"#close9",useOverlay:true,offsets:{x:-left,y:-top}});
+
+            $(document).click(function(event){
+                console.log("event.target ",event.target)
+                var tar = event.target.textContent
+                if ("查看大图"==tar){
+                    return;
+                }
+                var _con = $(".blk");
+                if(!_con.is(event.target)){
+                    if (pop.overlay != undefined) {
+                        pop.close();
+                    }
+                    if (pop7.overlay != undefined){
+                        pop7.close();
+                    }
+                    if (pop8.overlay != undefined){
+                        pop8.close();
+                    }
+                    if (pop9.overlay != undefined){
+                        pop9.close();
+                    }
+                }
+            });
+
+        });
+    </script>
+
+    <script src="./asottt_files/respond.min.js"></script>
+    <script src="./asottt_files/modernizr.js"></script>
+
+
+</head>
+
+
+<body class="">
+<div id="blk6" class="blk" style="display:none;">
+    <div class="main">
+        <h2>围棋</h2>
+        <a href="javascript:void(0)" id="close6" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
+        <ul>
+            <img class="lazy" src="./images/weiqi.png"
+                 alt="Weiqi"
+                 width="100%" height="100%" style="display: inline;">
+        </ul>
+    </div>
+</div>
+<div id="blk7" class="blk" style="display:none;">
+    <div class="main">
+        <h2>实惠</h2>
+        <a href="javascript:void(0)" id="close7" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
+        <ul>
+            <img class="lazy" src="./images/shihui_b.jpg"
+                 alt="实惠"
+                 width="100%" height="100%" style="display: inline;">
+        </ul>
+    </div>
+</div>
+<div id="blk8" class="blk" style="display:none;">
+    <div class="main">
+        <h2>Pogo看演出</h2>
+        <a href="javascript:void(0)" id="close8" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
+        <ul>
+            <img class="lazy" src="./images/pogo.png"
+                 alt="Pogo看演出"
+                 width="100%" height="100%" style="display: inline;">
+        </ul>
+    </div>
+</div>
+<div id="blk9" class="blk" style="display:none;">
+    <div class="main">
+        <h2>IP电话</h2>
+        <a href="javascript:void(0)" id="close9" class="closeBtn">
+            <img src="./images/close.png" alt="关闭"/>
+        </a>
+        <ul>
+            <img class="lazy" src="./images/IPphone.png"
+                 alt="IP电话"
+                 width="100%" height="100%" style="display: inline;">
+        </ul>
+    </div>
+</div>
+<section id="top">
+
+    <header id="home-top" class="nav-top nav-fixed headroom headroom--not-top headroom--pinned">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 col-xs-4">
+
+                    <h1 id="header-logo" class="image-text">
+
+                        <a href="">
+                            <span class="mask"></span>
+                            <span class="behind"></span>
+                        </a>
+
+                    </h1>
+
+                </div>
+
+                <div class="col-md-8 col-xs-8">
+
+                    <nav id="top-nav">
+
+                        <ul class="nav-list transistion">
+
+                            <li><a class="active" href="#about">About</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+                <!-- 12 -->
+
+            </div>
+            <!-- / row -->
+
+        </div>
+        <!--/ container -->
+
+
+    </header>
+    <div class="masthead-wrap">
+
+        <div id="title">
+
+
+            <img class="lazy" src="./images/bg.png" alt="21天过四级" width="100%"
+                 style="display: inline;  margin-top: -90px;">
+
+        </div>
+
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+</section>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<section id="hello">
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+    <div class="container">
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+        <div class="row">
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+            <div class="col-md-12">
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+                <article>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+                    <figure>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
+                        <img src="./images/me.png">
+
+                    </figure>
+
+
+                    <h3>Hi.</h3>
+
+                    <p class="info">
+                        我是一个UI设计师，网页设计师，插画设计师。我擅长于Ps,Ai,Fw,Sketch,Axure...
+                    </p>
+
+
+                </article>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
+
+</section>
+
+
+<div id="work"/>
+
+
+<!--<section id="table" class="work-shots">-->
+<!--<div class="container">-->
+<!---->
+<!--<div class="row">-->
+<!---->
+<!--<div class="col-md-12">-->
+<!---->
+<!--<div class="shot">-->
+<!---->
+<!--<img class="lazy" src="./asottt_files/rest-tablet.jpg" data-original="http://seanhalpin.io/assets/img/content/work/rest-tablet.jpg" alt="Table Reservation" width="900" height="441" style="display: inline;">-->
+<!---->
+<!--</div>-->
+<!---->
+<!---->
+<!---->
+<!--<div class="shot-info">-->
+<!---->
+<!---->
+<!---->
+<!--<h2>Table Reservation</h2>-->
+<!---->
+<!--<h3>Interface Design / UI</h3>-->
+<!---->
+<!---->
+<!--<p>-->
+<!--As an exploration in product design and architecture I have been working on an idea for a restaurant reservation system. Thoroughly challenging thinking through the product design but ultimately rewarding.-->
+<!--</p>-->
+<!---->
+<!--<p class="btn-hldr shot-btn">-->
+<!--<a href="https://dribbble.com/shots/1608486-Reservation-Table" class="main-btn new-window">view on dribbble <i class="drib"></i></a>-->
+<!--</p>-->
+<!---->
+<!---->
+<!---->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--</section>-->
+
+
+<section id="trizic" class="work-shots">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="shot">
+
+                    <img class="lazy" src="./images/gsj.png" alt="21天过四级" width="800" height="538"
+                         style="display: inline;">
+
+                </div>
+
+
+                <div class="shot-info">
+
+
+                    <h2>21天过四级</h2>
+
+                    <h3>UE / UI 设计</h3>
+
+
+                    <p>
+                        这是一个趣味的学习英语的APP,它以闯关的形式，让你在征服21个星球后，轻松通过4级考试，让你的英语学习不再枯燥。
+                    </p>
+
+                    <p class="btn-hldr shot-btn">
+                        <a href="http://www.zcool.com.cn/work/ZMzQyNTA3Ng==.html" class="main-btn new-window">去看看<i
+                                class="drib"></i></a>
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    
+</section>
 
-  </body>
+
+<section id="origami" class="work-shots">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="shot">
+
+                    <img class="lazy" src="./images/xybl.png" width="800" height="538" style="display: inline;">
+
+                </div>
+
+
+                <div class="shot-info">
+
+
+                    <h2>形影不离</h2>
+
+                    <h3>UE / UI 设计</h3>
+
+
+                    <p>
+                        这是一个看电影交友的APP，它的初衷是找到一群喜欢看电影的小伙伴，顺便交个朋友。电影购票结合团购的模式，不仅便宜而且方便退票。
+                    </p>
+
+                    <p class="btn-hldr shot-btn">
+                        <a href="http://www.zcool.com.cn/work/ZMzQ4NjU5Ng==.html" class="main-btn new-window">去看看<i
+                                class="drib"></i></a>
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--<section id="journey" class="work-shots">-->
+
+<!--<div class="container">-->
+
+<!--<div class="row">-->
+
+<!--<div class="col-md-12">-->
+
+<!--<div class="shot">-->
+
+<!--<img class="lazy" src="./asottt_files/journey-hp.jpg"-->
+<!--data-original="http://seanhalpin.io/assets/img/content/work/journey-hp.jpg" alt="Journey"-->
+<!--width="800" height="538" style="display: inline;">-->
+
+<!--</div>-->
+
+
+<!--<div class="shot-info">-->
+
+
+<!--<h2>Journey</h2>-->
+
+<!--<h3>Web Design / UI / UX / App Design</h3>-->
+
+
+<!--<p>-->
+<!--I'm currently working on a travel related app called Journey, mainly as a collaborative side-->
+<!--project to get a better understanding of both app design and development for different-->
+<!--platforms.-->
+<!--</p>-->
+
+<!--<p class="btn-hldr shot-btn">-->
+<!--<a href="http://drbl.in/kocR" class="main-btn new-window">view on dribbble <i class="drib"></i></a>-->
+<!--</p>-->
+
+
+<!--</div>-->
+
+<!--</div>-->
+
+<!--</div>-->
+
+<!--</div>-->
+
+<!--</section>-->
+
+
+<section id="sherpa" class="work-shots">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="shot">
+
+                    <img class="lazy" src="./images/weiqi.png"
+                         alt="Weiqi"
+                         width="800" height="538" style="display: inline;">
+
+                </div>
+
+
+                <div class="shot-info">
+
+
+                    <h2>围棋对弈平台</h2>
+
+                    <h3>Web Design</h3>
+
+
+                    <p>
+                        这是一个网页版围棋对弈平台，支持在线对弈、聊天功能等等，喜爱围棋的棋友们，可以来这里对战一番。
+                    </p>
+
+                    <p class="btn-hldr shot-btn">
+
+                        <a class="main-btn"  id="ele6" >查看大图<i class="drib"></i></a>
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="realtii" class="work-shots">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="shot">
+
+                    <img class="lazy" src="./images/shihui.png"
+                         alt="实惠"
+                         width="800" height="538" style="display: inline;">
+
+                </div>
+
+
+                <div class="shot-info">
+
+
+                    <h2>实惠APP</h2>
+
+                    <h3>UI Design</h3>
+
+
+                    <p>
+                        实惠APP是易居中国联合新浪网、新浪微博、分众传媒、申通快递共同推出的定位于写字楼(社区)的移动生活O2O服务平台。
+                    </p>
+
+                    <p class="btn-hldr shot-btn">
+                        <a href="http://www.zcool.com.cn/work/ZMTIyNzY3MjA=.html"
+                           class="main-btn new-window">去看看(团队作品)<i class="drib"></i></a>
+                        <!--<a class="main-btn"  id="ele7" >查看大图<i class="drib"></i></a>-->
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--<section id="trizic" class="work-shots">-->
+<!---->
+<!--<div class="container">-->
+<!---->
+<!--<div class="row">-->
+<!---->
+<!--<div class="col-md-12">-->
+<!---->
+<!--<div class="shot">-->
+<!---->
+<!--<img class="lazy" src="./asottt_files/trizic-hp.jpg" data-original="http://seanhalpin.io/assets/img/content/work/trizic-hp.jpg" alt="Trizic" width="800" height="538" style="display: inline;">-->
+<!---->
+<!--</div>-->
+<!---->
+<!---->
+<!---->
+<!--<div class="shot-info">-->
+<!---->
+<!---->
+<!---->
+<!--<h2>Trizic</h2>-->
+<!---->
+<!--<h3>UI Design / UX Design / Web Design</h3>-->
+<!---->
+<!---->
+<!--<p>-->
+<!--Recently I worked on an overhaul of the marketing website for Trizic, a web-based advisory service platform. I used soft colours to keep the website friendly but also maintain its business like nature. -->
+<!--</p>-->
+<!---->
+<!--<p class="btn-hldr shot-btn">-->
+<!--<a href="http://dribbble.com/seanehalpin/projects/152669-Financial" class="main-btn new-window">view on dribbble <i class="drib"></i></a>-->
+<!--</p>-->
+<!---->
+<!---->
+<!---->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--</section>-->
+
+
+<section id="retrolove" class="work-shots">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="shot">
+
+
+                    <img class="lazy" src="./images/pogo.png"
+                         alt="Retrolove"
+                         style="display: inline;">
+
+                </div>
+
+
+                <div class="shot-info">
+
+                    <h2>Pogo看演出</h2>
+
+                    <h3>UI Design</h3>
+
+
+                    <p>
+                        Pogo看演出是一款提供音乐现场信息服务的软件。你可以通过Pogo看演出，了解本地以及全国城市的热门音乐演出。
+                    </p>
+
+                    <p class="btn-hldr shot-btn">
+                        <!--<a href="" class="main-btn new-window">去看看<i class="drib"></i></a>-->
+                        <a class="main-btn"  id="ele8" >查看大图<i class="drib"></i></a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="text-king" class="work-shots">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="shot">
+
+
+                    <img class="lazy" src="./images/IPphone.png"
+                         alt="IP电话"
+                         width="800" height="538" style="display: inline;">
+
+                </div>
+
+
+                <div class="shot-info">
+
+                    <h2>IP电话</h2>
+
+                    <h3>UI Design</h3>
+
+
+                    <p>
+                        IP电话是由中国石油推出的通话系统,是一种通过互联网或其他使用IP技术的网络，来实现新型的电话通讯。
+                    </p>
+
+                    <p class="btn-hldr shot-btn">
+                        <!--<a href="#" class="main-btn new-window">view on dribbble <i class="drib"></i></a>-->
+                        <a class="main-btn"  id="ele9" >查看大图<i class="drib"></i></a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div id="contact"/>
+<section id="i-can-help">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <article>
+
+
+                    <header>
+
+                        <h2>联系方式.</h2>
+
+                        <h3>QQ:499267759.</h3>
+
+                    </header>
+
+                    <p>
+                        如果你想要开始一个新的项目，寻求帮助，或者只是单纯的给我打招呼，那就联系我吧。
+                    </p>
+
+                    <p class="btn-hldr">
+
+                        <a href="mailto:asottt@163.com" class="main-btn">
+                            发邮件<i class="email"></i>
+                        </a>
+
+                    </p>
+
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <ul class="footer-list">
+
+                    <!--<li><a href="http://dribbble.com/seanehalpin">dribbble</a></li>-->
+                    <!--<li><a href="http://instagram.com/seanehalpin">instagram</a></li>-->
+                    <!--<li><a href="https://twitter.com/seanehalpin">twitter</a></li>-->
+                    <!--<li><a href="mailto:sean.e.halpin@gmail.com" class="email-lnk">hire me</a></li>-->
+                    <!---->
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <p>© 2015 <a href="http://www.asottt.com">asot</a>. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="./asottt_files/bootstrap.min.js"></script>
+<script src="./asottt_files/app.js"></script>
+<script src="./asottt_files/init.min.js"></script>
+
+
+<script>
+
+</script>
+
+</body>
 </html>
